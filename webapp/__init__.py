@@ -4,7 +4,11 @@ from webapp.pages.latest import bp as latest_bp
 from webapp.pages.about import bp as about_bp
 
 def create_app():
-    app = Flask(__name__)
+    app = Flask(
+        __name__,
+        template_folder="templates",  # inside webapp/
+        static_folder="static"        # inside webapp/
+    )
     app.register_blueprint(home_bp)
     app.register_blueprint(latest_bp)
     app.register_blueprint(about_bp)

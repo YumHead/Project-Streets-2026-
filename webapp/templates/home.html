@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}BothStreets{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="hero__inner">
+    <div class="kicker">Compare coverage • Reduce spin • Save time</div>
+
+    <h1>One story, multiple perspectives.</h1>
+    <p class="lead">
+      BothStreets pulls coverage from different outlets so you can quickly compare headlines and framing.
+      Story clustering and “all sides” grouping comes next.
+    </p>
+
+    <div class="searchRow" aria-label="Search">
+      <div class="searchBox">
+        <span class="searchIcon">⌕</span>
+        <span class="searchPlaceholder">Search topics (coming soon)</span>
+      </div>
+      <a class="btn btn--primary" href="/latest">Browse latest</a>
+    </div>
+
+    <div class="chips">
+      <a class="chip" href="/latest">Politics</a>
+      <a class="chip" href="/latest">World</a>
+      <a class="chip" href="/latest">Business</a>
+      <a class="chip" href="/latest">Tech</a>
+      <a class="chip" href="/latest">Health</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__inner">
+    <div class="sectionHead">
+      <h2>How it works</h2>
+      <p class="muted">A simple workflow inspired by Ground News / AllSides.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step__num">1</div>
+        <div>
+          <h3>Collect</h3>
+          <p>Scrape headlines and links across outlets.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">2</div>
+        <div>
+          <h3>Group</h3>
+          <p>Cluster similar articles into one story (next milestone).</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">3</div>
+        <div>
+          <h3>Compare</h3>
+          <p>See multiple angles side-by-side in a clean story view.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section__inner">
+    <div class="sectionHead">
+      <h2>Example story card</h2>
+      <p class="muted">Mock layout for the “all sides” view you’ll build.</p>
+    </div>
+
+    <div class="storyCard">
+      <div class="storyCard__top">
+        <div class="badge">Story</div>
+        <div class="muted small">Updated recently</div>
+      </div>
+
+      <h3 class="storyCard__title">Example: Major policy announcement sparks debate</h3>
+
+      <div class="split">
+        <div class="splitCol">
+          <div class="splitHead">
+            <span class="dot dot--left"></span>
+            <span>Left</span>
+          </div>
+          <a class="headline" href="#" onclick="return false;">Outlet A: Focuses on impact and equity</a>
+          <a class="headline" href="#" onclick="return false;">Outlet B: Highlights community response</a>
+        </div>
+
+        <div class="splitCol">
+          <div class="splitHead">
+            <span class="dot dot--center"></span>
+            <span>Center</span>
+          </div>
+          <a class="headline" href="#" onclick="return false;">Outlet C: Summarizes key details and timeline</a>
+          <a class="headline" href="#" onclick="return false;">Outlet D: Emphasizes statements from officials</a>
+        </div>
+
+        <div class="splitCol">
+          <div class="splitHead">
+            <span class="dot dot--right"></span>
+            <span>Right</span>
+          </div>
+          <a class="headline" href="#" onclick="return false;">Outlet E: Focuses on costs and tradeoffs</a>
+          <a class="headline" href="#" onclick="return false;">Outlet F: Highlights political strategy</a>
+        </div>
+      </div>
+
+      <div class="storyCard__footer">
+        <a class="btn btn--ghost" href="/latest">View current links</a>
+        <span class="muted small">This layout becomes real once clustering is added.</span>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
