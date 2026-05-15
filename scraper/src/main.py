@@ -5,7 +5,7 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
-from db import get_connection  # <-- NEW
+from scraper.db import get_connection  # <-- NEW #Updated 5/15/26
 
 HEADERS = {
     "User-Agent": "BothStreetsBot/0.1 (local dev)"
